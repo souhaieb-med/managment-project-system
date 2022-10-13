@@ -5,104 +5,47 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Online Shop</title>
+    <link rel="stylesheet" href="PP.html">
     <link rel="stylesheet" href="CRUD.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
 </head>
 <body>
     <div class="crud">
         <div class="head">
-            <h2>crud</h2>
-            <p>Managment Product System</p>
+            <h2>Anya Chan For  </h2>
+            <p>Your Managment System</p>
         </div>
         <div class="inputs">
             <input placeholder="title" type="text" id="title">
             </div>
             <div class="price">
-                <input type="number" name="" id="price" placeholder="price">
-                <input type="number" name="" id="taxes" placeholder="taxes">
-                <input type="text" name="" id="quality" placeholder="quality">
-                <input type="number" name="" id="discount" placeholder="discount">
-                <small id="total">123325</small>
+                <input onkeyup="getTotal()" type="number" name="" id="price" placeholder="price">
+                <input onkeyup="getTotal()" type="number" name="" id="taxes" placeholder="taxes">
+                <input onkeyup="getTotal()" type="number" name="" id="ads" placeholder="ads">
+                <input onkeyup="getTotal()" type="number" name="" id="discount" placeholder="discount">
+                <small id="total"></small>
+                
             </div>
-            <input placeholder="count" type="text" id="count">
-            <input placeholder="category" type="text" id="category">
+            <input  type="number" name="" id="count" placeholder="count">
+
             <button id="submit">Create</button>
-
-       
-
-
-
-        <div class="output">
-        <div class="searchBlock">
-        <input type="text" id="search" placeholder="search">
-    </div>
-    <button id="searchTitle">Search By Title</button>
-    
-</div>
+          
+<div id="deleteAll"></div>
 <table>
     <tr>
         <th>id</th>
         <th>title</th>
         <th>price</th>
         <th>taxes</th>
-        <th>quality</th>
-        <th>discount</th>
         <th>discount</th>
         <th>total</th>
         <th>update</th>
         <th>delete</th>
     </tr>
-
-    <tbody>
-        <td>1</td>
-        <td>Monitors</td>
-        <td>2000</td>
-        <td>20</td>
-        <td>high Def</td>
-        <td>19</td>
-        <td>2100</td>
-        <td>Music</td>
-        <td><button id="update">update</button></td>
-        <td><button id="update">delete</button></td>
-    </tbody>
-    <tbody>
-        <td>1</td>
-        <td>Monitors</td>
-        <td>2000</td>
-        <td>20</td>
-        <td>high Def</td>
-        <td>19</td>
-        <td>2100</td>
-        <td>Music</td>
-        <td><button id="update">update</button></td>
-        <td><button id="update">delete</button></td>
-    </tbody>
-    <tbody>
-        <td>1</td>
-        <td>Monitors</td>
-        <td>2000</td>
-        <td>20</td>
-        <td>high Def</td>
-        <td>19</td>
-        <td>2100</td>
-        <td>Music</td>
-        <td><button id="update">update</button></td>
-        <td><button id="update">delete</button></td>
-    </tbody>
-    <tbody>
-        <td>1</td>
-        <td>Monitors</td>
-        <td>2000</td>
-        <td>20</td>
-        <td>high Def</td>
-        <td>19</td>
-        <td>2100</td>
-        <td>Music</td>
-        <td><button id="update">update</button></td>
-        <td><button id="update">delete</button></td>
+<tbody id="tbody">
     </tbody>
 </table>
 </div>
     <script src="PP.js"></script>
+    
 </body>
 </html>
