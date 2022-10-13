@@ -1,0 +1,78 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+   
+body{
+    background-image: url(https://cdn.myanimelist.net/s/common/forum/8a44640c-6310-4d98-92ae-d9ed727cf1e0.jpeg);
+    background-size: cover; 
+    opacity: 85%;
+    color: #ffff;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+.crud{
+    width: 80%;
+    margin: auto;
+}
+.head{
+    text-align: center;
+    text-transform: uppercase;
+    margin: 10px 0;
+}
+input{
+    width: 100%;
+    height: 30px;
+    outline: none;
+    border: none;
+    background: #111;
+    margin: 4px 0;
+    border-radius: 4px;
+    padding: 4px;
+    color: #ffff;
+}
+input:focus{
+background: #000;
+transform: scale(1.1);
+}
+.price input{
+    width: 20%;
+}
+#total{
+    background: #a00d02;
+    padding:5px 2px ;
+    border-radius: 4px;
+}
+#total::before{
+    content: 'Total: ';
+}
+button{
+    width: 100%;
+    height: 30px;
+    border: none;
+    color: #ffff;
+    background: #390053;
+    border-radius: 20px;
+}
+button:hover{
+    background: #51025f;
+    letter-spacing: 1px;
+}
+.btnSearch{
+    display: flex;
+    justify-content: space-between;
+}
+.btnSearch button{
+    width: 45%;
+}
+table{
+    width: 100%;
+    text-align: center;
+    margin: 10px 0;
+    color: #000;
+}
+table th{
+    text-transform: uppercase;
+}
+th,td {
+    padding: 5px;
+}
